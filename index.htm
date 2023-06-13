@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="stylee.css">
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>m&s</title>
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="logo.png" alt="Logo de la tienda">
+        </div>
+        <div class="navbar-cart">
+            <img src="cart-icon.png" alt="Ícono del carro de compras">
+        </div>
+        <div class="navbar-menu">
+            <button class="navbar-button">Login</button>
+        </div>
+    </nav>
+    
+    <nav class="barra-lateral">
+        <div class="barralateral-inner">
+            <header class="barralateral-header">
+                    <button type="button" class="menu-hamburgesa" onclick="toggleSidebar()"> 
+                    <i class="bx bx-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="33" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 8l16 0"></path>
+                        <path d="M4 16l16 0"></path>
+                        </svg></i>
+                    </button>
+                <p class="barra-lateral-logo" > S&M clothing </p>
+            </header>
+                <nav class="barra-lateral-menu">
+
+                        <button type="button">
+                        
+                            <i class="bx bx-inicio"></i>
+                            <box-icon name='home'></box-icon>
+                                <a href="index.htm" class="link"> <span>inicio</span> </a>
+                            </button>
+                    
+                    <button type="button">
+                        
+                    <i class= "bx bx-app" >
+                        <box-icon type='solid' name='download'>
+                        </box-icon>
+                    </i>
+                            <a href="app.htm"><span>app</span></a>
+                    </button>
+                    <button type="button">
+                        
+                    <i class= "bx bx-contacto" >
+                        <box-icon type='solid' name='contact'></box-icon>
+                    </i>
+                    <a href="contactos.htm"><span>contact</span></a>
+                    </button>
+                    <button type="button">
+                        
+                            <i class= "bx bx-prendas" >
+                                <box-icon name='closet'></box-icon>
+                            </i>
+                            <a href="prendas.htm"><span>ropa</span></a>
+                    </button>
+                    <button type="button">
+                        
+                            <i class="bx bx-help-circle" ></i>
+                                <box-icon name='help-circle'></box-icon>
+                                <a href="ayuda.htm"><span>ayuda</span></a>
+                    </button>
+                </nav>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        const toggleSidebar = () =>document.body.classList.toggle
+        ("open");
+    </script>
+
+    <section class="list">
+
+        <div class="price-list">
+
+            <img src="ropa/descarga.jpeg" alt="">
+            <h4>remera: <b>4000$</b></h4>
+            <button type="add">añadir</button>
+            <img src="ropa/descarga (1).jpeg" alt="">
+            <h4>remera: <b>4300$</b></h4>
+            <button type="add">añadir</button>
+            <img src="ropa/descarga (2).jpeg" alt="">
+            <h4>remera: <b>1200$</b></h4>
+            <button type="add">añadir</button>
+            <img src="ropa/descarga (3).jpeg" alt="">
+            <h4>remera: <b>99000$</b></h4>
+            <button type="add">añadir</button>
+
+        </div>
+        <div class="price-list2">
+
+            <img src="ropa/descarga.jpeg" alt="">
+            <h4>remera: <b>4000$</b></h4>
+            <button type="add">añadir</button>
+            <img src="ropa/descarga (1).jpeg" alt="">
+            <h4>remera: <b>4300$</b></h4>
+            <button type="add">añadir</button>
+            <img src="ropa/descarga (2).jpeg" alt="">
+            <h4>remera: <b>1200$</b></h4>
+            <button type="add">añadir</button>
+            <img src="ropa/descarga (3).jpeg" alt="">
+            <h4>remera: <b>99000$</b></h4>
+            <button type="add">añadir</button>
+        </div>
+        <div class="price-list3">
+
+            <img src="ropa/descarga.jpeg" alt="">
+            <h4 class="ropa">remera: <b>4000$</b></h4>
+            <button type="add">añadir</button>
+            <img src="ropa/descarga (1).jpeg" alt="">
+            <h4>remera: <b>4300$</b></h4>
+            <button type="add">añadir</button>
+            <img src="ropa/descarga (2).jpeg" alt="">
+            <h4>remera: <b>1200$</b></h4>
+            <button type="add">añadir</button>
+            <img src="ropa/descarga (3).jpeg" alt="">
+            <h4>remera: <b>99000$</b></h4>
+            <button type="add">añadir</button>
+
+        </div>
+
+    </section>
+
+
+    <footer class="pie">
+        <p class="copy"> &copy; M&S.clothing.inc - derechos de diseño de M&S.clothing.inc </p>
+
+
+    </footer>
+
+</body>
+</html>
+
+
+
+

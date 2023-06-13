@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="stylee.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m&s</title>
+</head>
+<body>
+
+</head>
+<body>
+    
+    <nav class="barra-lateral">
+        <div class="barralateral-inner">
+            <header class="barralateral-header">
+                    <button type="button" class="menu-hamburgesa" onclick="toggleSidebar()"> 
+                    <i class="bx bx-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="33" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M4 8l16 0"></path>
+                        <path d="M4 16l16 0"></path>
+                        </svg></i>
+                    </button>
+                <p class="barra-lateral-logo" > S&M clothing </p>
+            </header>
+                <nav class="barra-lateral-menu">
+
+                        <button type="button">
+                        
+                            <i class="bx bx-inicio"></i>
+                            <box-icon name='home'></box-icon>
+                                <a href="index.htm" class="link"> <span>inicio</span> </a>
+                            </button>
+                    
+                    <button type="button">
+                        
+                    <i class= "bx bx-app" >
+                        <box-icon type='solid' name='download'>
+                        </box-icon>
+                    </i>
+                            <a href="app.htm"><span>app</span></a>
+                    </button>
+                    <button type="button">
+                        
+                    <i class= "bx bx-contacto" >
+                        <box-icon type='solid' name='contact'></box-icon>
+                    </i>
+                    <a href="contactos.htm"><span>contact</span></a>
+                    </button>
+                    <button type="button">
+                        
+                            <i class= "bx bx-prendas" >
+                                <box-icon name='closet'></box-icon>
+                            </i>
+                            <a href="prendas.htm"><span>ropa</span></a>
+                    </button>
+                    <button type="button">
+                        
+                            <i class="bx bx-help-circle" ></i>
+                                <box-icon name='help-circle'></box-icon>
+                                <a href="ayuda.htm"><span>ayuda</span></a>
+                    </button>
+                </nav>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        const toggleSidebar = () =>document.body.classList.toggle
+        ("open");
+    </script>
+    
+    <section class="help-section">
+        <div class="container">
+          <h2 class="text-center">Ayuda y Reclamos</h2>
+          <p class="text-center">Si tienes alguna pregunta o reclamo, no dudes en contactarnos:</p>
+        
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                <p><strong>Teléfono:</strong> 123-456-7890</p>
+                <p><strong>Email:</strong> info@tutiendaderopa.com</p>
+                <p><strong>Dirección:</strong> Calle Principal, Ciudad, País</p>
+              </div>
+            </div>
+            
+            <div class="col-md-6">
+              <div class="faq">
+                <h3>Preguntas frecuentes</h3>
+                
+                <h4>¿Cuál es su política de devoluciones?</h4>
+                <p>Nuestra política de devoluciones permite devolver los productos dentro de los 30 días posteriores a la compra, siempre y cuando estén en su estado original y no hayan sido usados. Para más información, consulta nuestra página de <a href="politica_devoluciones.html">Política de Devoluciones</a>.</p>
+                
+                <h4>¿Cómo puedo rastrear mi pedido?</h4>
+                <p>Puedes rastrear tu pedido iniciando sesión en tu cuenta y visitando la sección de "Mis Pedidos". Allí encontrarás información detallada sobre el estado de tu pedido y un enlace de seguimiento si está disponible.</p>
+                
+                <h4>¿Qué métodos de pago aceptan?</h4>
+                <p>Aceptamos tarjetas de crédito y débito Visa, MasterCard y American Express, así como pagos a través de PayPal.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <div class="complaint-form">
+                <h3 class="text-center">Formulario de Reclamos</h3>
+                <form>
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" class="form-control" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>      
+        
+
+</body>
+</html>

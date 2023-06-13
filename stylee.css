@@ -1,0 +1,347 @@
+* body {
+margin: 0;
+    background:#E3ECEC;
+    max-width: 1800px;
+    min-width: 400px;
+    font-style: italic;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-width: 100px;
+    margin-left: 45px;
+}
+
+.navbar-menu {
+    justify-self: center;
+    margin: 0 20px;
+}
+
+.navbar-button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.navbar-cart img {
+    max-width: 30px;
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        margin-left: 45px;
+    }
+}
+
+/* estilo de los botones de la barra lateral */
+
+button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.link {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+/* controles del menu hamburguesa */
+
+.barra-lateral {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    background: violet;
+    transition: all 0.4s;
+}
+
+body.open .barra-lateral {
+    width: 240px;
+}
+
+.barralateral-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+}
+
+.barralateral-header {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    padding: 0 1.25rem 0 0;
+    border-left: 3px solid transparent;
+    transition: all 0.4s;
+}
+
+.barralateral-header:hover {
+    border-left: 3px solid #E3ECEC ;
+}
+
+.menu-hamburguesa {
+    width: 70px;
+    height: 70px;
+    display: grid;
+    place-items: center;
+}
+
+.menu-hamburguesa > i, body.open .menu-hamburguesa > i{
+    font-size: 25px;
+    color: #f9f9f9;
+    transition: all 0.4s;
+}
+
+.menu-hamburguesa > i, body.open .menu-hamburguesa > i{
+    color: #f9f9f9;
+}
+
+.barra-lateral-logo {
+    height: 30px;
+    opacity: 0;
+    transition: all 0,4s;
+}
+
+body.open .barra-lateral-logo {
+    opacity: 1;
+    transition: all 0,4s;
+}
+
+.barra-lateral-menu {
+    display: grid;
+}
+
+.barra-lateral-menu > button{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    height: 55px;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1;
+    padding: 0 22px;
+    border-left: 3px solid transparent;
+    transition: all 0.4s;
+}
+
+.barra-lateral-menu > button:hover{
+    border-left: 3px solid #f9f9f9;
+}
+
+.barra-lateral-menu > button.has-border {
+    padding-bottom: 1rem;
+    border-bottom: 1px;
+    margin-bottom: 1rem;
+}
+
+.barra-lateral-menu > button > i{
+    font-size: 20px;
+    color: #f9f9f9;
+    transition: all 0.4s;
+}
+
+.barra-lateral-menu >button:hover > i, .barra-lateral-menu > button:hover > a > span{
+    color: #E3ECEC;
+}
+
+.barra-lateral-menu > button > a > span{
+    color: #f9f9f9;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+body.open .barra-lateral-menu > button > a > span{
+    opacity: 1;
+    transition: all 0.4s;
+}
+
+
+
+/* lista de precios */
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+  .price-list {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.price-list2,
+.price-list3 {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.price-list img,
+.price-list2 img,
+.price-list3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price-list h4,
+.price-list2 h4,
+.price-list3 h4 {
+    margin: 10px 0;
+}
+
+.price-list button,
+.price-list2 button,
+.price-list3 button {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+.list {
+        justify-content: space-between;
+    }
+}
+
+
+/* footer de la pagina con copyright terminos y condiciones etc. */
+
+footer {
+    align-items: center;
+    display: flex;
+    min-width: 400px;
+    max-width: 1800px;
+    background: #202020;
+    height: auto;
+    display: flex;
+    align-items: center;
+    
+}
+.copy {
+    align-content: center;
+    align-items: center;
+    min-width: 400px;
+    max-width: 1800px;
+    display: flex;
+    padding: 4px 25%;
+    color: #d3dede;
+}
+
+/* estilo de la seccion de app. */
+
+.app-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-left: 45px;
+}
+
+@media (min-width: 768px) {
+    .app-section {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.app-description {
+    padding: 20px;
+}
+
+.app-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.app-download-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.app-download-buttons a {
+    display: inline-block;
+}
+
+.app-download-buttons img {
+    max-width: 40px;
+}
+
+@media (max-width: 767px) {
+    .app-download-buttons {
+        flex-direction: column;
+    }
+}
+
+/* estilo de la seccion de contacto. */
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contacto-info {
+    margin-bottom: 20px;
+}
+
+.contacto-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contacto-mapa img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .contacto {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contacto-info {
+        max-width: 300px;
+        margin-right: 20px;
+        text-align: left;
+    }
+
+.contacto-mapa {
+        flex-grow: 1;
+    }
+}
+
+/* estilo de la seccion de ayuda. */
+
+.help-section {
+    margin: 0 45px;
+
+}
